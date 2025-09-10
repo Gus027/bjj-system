@@ -110,19 +110,21 @@
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
+            background: none;
   
             .faixa {
-              width: 16px;
-              height: 16px;
+              padding: 2px 8px;
+              border: 2px solid transparent;
+              border-radius: 16px;
+              font-size: 0.9rem;
               margin-right: 8px;
-              border-radius: 4px;
             }
   
-            &.white .faixa { background: #eee; }
-            &.blue .faixa { background: blue; }
-            &.purple .faixa { background: purple; }
-            &.brown .faixa { background: brown; }
-            &.black .faixa { background: black; }
+            &.white .faixa { background: #eee; color: black; font-weight: bold;}
+            &.blue .faixa { background: rgb(12, 154, 219);  color: white; font-weight: bold;}
+            &.purple .faixa { background: rgb(189, 15, 189);  color: white; font-weight: bold;}
+            &.brown .faixa { background: rgb(100, 35, 35);  color: white; font-weight: bold;}
+            &.black .faixa { background: black;  color: white; font-weight: bold;}
           }
         }
   
