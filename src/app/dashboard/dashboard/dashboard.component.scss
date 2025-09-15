@@ -37,11 +37,63 @@
     background-color: #fafafa;
     padding: 2rem;
     overflow-y: auto;
+
+    .escopo-profile{
+      align-items: center;  
+      padding: 0.75rem 1rem;  
+      margin-top: 0;
+      margin: -30px -2rem 1rem -2rem; /* negativo do padding do pai */
+      border: 1px solid #ddd;   
+      border-top: 0;
+      border-right: 0;
+      border-left: 0;    
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+
+      .profile {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        justify-content: right;
+  
+        .info {
+          text-align: right;
+          span {
+            font-weight: bold;
+          }
+          small {
+            color: gray;
+            display: block;
+          }
+        }
+  
+        .avatar {
+          width: 40px;
+          height: 40px;
+          background: #333;
+          color: #fff;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+        }
+      }
+    }
   
     .header {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      
+      h1{
+        margin: 0;
+        margin-bottom: 0;
+        font-size: 30px;
+      }
+
+      p{
+        margin-top: 0;
+      }
   
       .profile {
         display: flex;
@@ -99,8 +151,13 @@
         padding: 1rem;
   
         h3 {
-          margin-bottom: 1rem;
+          margin-top: initial;
+          margin: 0;
+          font-weight: 500;
+          font-size: 23px;
+          font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto";
         }
+
   
         ul {
           list-style: none;
@@ -132,6 +189,33 @@
           display: flex;
           justify-content: space-between;
           margin-bottom: 1rem;
+          align-items: center;  
+          padding: 0.75rem 1rem;  
+          margin-bottom: 1rem;
+
+          border: 1px solid #ddd;   
+          border-radius: 8px;      
+          background: #fff;        
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
+        }
+
+          .titulo-data {
+          display: flex;
+          flex-direction: column;
+
+          h4 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 600;
+          }
+
+          .data {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.85rem;
+            color: #555;
+          }
         }
   
         .inscritos {
@@ -141,6 +225,14 @@
           font-size: 0.85rem;
         }
       }
+    } 
+
+    .description{
+      margin-bottom: 1rem;
+      top: 0px;
+      font-size: 15px;
+      font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto";
+      color: #78716C;
     }
   
     .presenca {
