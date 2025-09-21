@@ -1,28 +1,6 @@
 <div class="dashboard">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <div class="logo">🏫</div>
-      <nav>
-        <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
-        <a>Alunos</a>
-        <a>Presença</a>
-        <a>Eventos</a>
-        <a>Graduações</a>
-        <a>Notificações</a>
-      </nav>
-    </aside>
-  
     <!-- Conteúdo principal -->
     <main class="content">
-      <div class="escopo-profile">
-        <div class="profile">
-          <div class="info">
-            <span>Mestre Carlos</span>
-            <small>Professor</small>
-          </div>
-          <div class="avatar">MC</div>
-        </div>
-      </div>
       <header class="header">
         <div>
           <h1>Dashboard do Professor</h1>
@@ -31,10 +9,33 @@
       </header>
   
       <section class="cards">
-        <div class="card">Total de Alunos<br /><strong>48</strong><br /><small>+2 novos este mês</small></div>
-        <div class="card">Presentes Hoje<br /><strong>12</strong><br /><small>De 48 alunos</small></div>
-        <div class="card">Próximas Graduações<br /><strong>5</strong><br /><small>Prontos para avaliar</small></div>
-        <div class="card">Eventos Próximos<br /><strong>2</strong><br /><small>Nas próximas 2 semanas</small></div>
+        <div class="card">
+          <div class="card__titulo">
+            Total de Alunos
+          </div>
+          <br /><strong class="card__quantidade">48</strong><br />
+          <small class="card__desc">+2 novos este mês</small>
+        </div>
+        <div class="card">
+          <div class="card__titulo">
+            Presentes Hoje
+          </div>
+          <br /><strong class="card__quantidade">12</strong><br />
+          <small class="card__desc">De 48 alunos</small>
+        </div>
+        <div class="card">
+          <div class="card__titulo">
+            Próximas Graduações
+          </div>
+          <br /><strong class="card__quantidade">5</strong><br />
+          <small class="card__desc">Prontos para avaliar</small></div>
+        <div class="card">
+          <div class="card__titulo">
+            Eventos Próximos
+          </div>
+          <br /><strong class="card__quantidade">2</strong><br />
+          <small class="card__desc">Nas próximas 2 semanas</small>
+        </div>
       </section>
   
       <section class="middle">
@@ -78,7 +79,9 @@
   
       <section class="presenca">
         <h3>Presença Mensal</h3>
-        <p>Taxa de presença geral da academia este mês</p>
+        <div class="desc">
+          <p>Taxa de presença geral da academia este mês</p>
+        </div>
         <div class="barra">
           <div class="progress" style="width: 78%"></div>
           <span>78%</span>

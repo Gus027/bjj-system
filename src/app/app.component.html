@@ -1,1 +1,26 @@
-<router-outlet></router-outlet>
+<div class="app-container">
+  <aside class="sidebar">
+    <div class="logo">BJJ System</div>
+    <nav>
+      <a routerLink="/dashboard" routerLinkActive="active">Dashboard</a>
+      <a routerLink="/alunos" routerLinkActive="active">Alunos</a>
+      <a routerLink="/presenca" routerLinkActive="active">Presença</a>
+      <a routerLink="/eventos" routerLinkActive="active">Eventos</a>
+      <a routerLink="/posts" routerLinkActive="active">Posts</a>
+      <a routerLink="/notificacoes" routerLinkActive="active">Notificações</a>
+    </nav>
+  </aside>
+
+  <main class="main-content">
+    <div class="escopo-profile">
+        <div class="profile">
+          <div class="info">
+            <span>Mestre Carlos</span>
+            <small>Professor</small>
+          </div>
+          <div class="avatar">MC</div>
+        </div>
+      </div>
+    <router-outlet></router-outlet>
+  </main>
+</div>

@@ -19,15 +19,14 @@
     }
   
     nav a {
-      padding: 0.75rem;
-      color: #fff;
-      text-decoration: none;
       display: block;
-      border-radius: 4px;
-      margin-bottom: 0.5rem;
+      padding: 10px;
+      color: white;
+      text-decoration: none;
   
       &.active, &:hover {
         background: #444;
+        border-radius: 5px;
       }
     }
   }
@@ -37,48 +36,6 @@
     background-color: #fafafa;
     padding: 2rem;
     overflow-y: auto;
-
-    .escopo-profile{
-      align-items: center;  
-      padding: 0.75rem 1rem;  
-      margin-top: 0;
-      margin: -30px -2rem 1rem -2rem; /* negativo do padding do pai */
-      border: 1px solid #ddd;   
-      border-top: 0;
-      border-right: 0;
-      border-left: 0;    
-      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05); 
-
-      .profile {
-        display: flex;
-        align-items: center;
-        gap: 1rem;
-        justify-content: right;
-  
-        .info {
-          text-align: right;
-          span {
-            font-weight: bold;
-          }
-          small {
-            color: gray;
-            display: block;
-          }
-        }
-  
-        .avatar {
-          width: 40px;
-          height: 40px;
-          background: #333;
-          color: #fff;
-          border-radius: 50%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          font-weight: bold;
-        }
-      }
-    }
   
     .header {
       display: flex;
@@ -135,6 +92,19 @@
         border-radius: 8px;
         padding: 1rem;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      
+        &__titulo{
+          color: black ;
+          font-weight: 500;
+        }
+
+        &__quantidade{
+          font-size: 23px;
+        }
+
+        &__desc{
+          color: #78716C ;
+        }
       }
     }
   
@@ -235,6 +205,10 @@
       color: #78716C;
     }
   
+    .desc{
+      color: #78716C ;
+    }
+
     .presenca {
       margin-top: 2rem;
       background: #fff;
